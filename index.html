@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <link  rel="stylesheet" href="css/all.min.css"/>
+    <link  rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link  rel="stylesheet" href="css/index_style.css"/>
+
+
+</head>
+<body>
+ 
+  
+
+
+  <div class="container">
+      <h1 id="demo"></h1>
+      <h1 id="clock"></h1>
+ 
+
+    <div class="row my-4" id="rowData">
+       
+    </div>
+  </div>
+    <hr/>
+ <div class="container py-3">
+   <h1>Empolyees</h1>
+    <div>
+      <div class="form-group">
+          <label>Empolyee Name:</label>
+          <input   id="name" class="mb-2 form-control"/>
+          <div class="alert alert-danger name-alert">name should start with capital letter followed by 2-8 small letters</div>
+
+      </div>
+      <div class="form-group">
+          <label>Empolyee Age:</label>
+          <input  id="age" class="form-control"/>
+          <div class="alert alert-danger age-alert">age should be from 20 to 80</div>
+
+      </div>
+      <div class="form-group">
+          <label>Empolyee Phone:</label>
+          <input  id="phone" class="form-control"/>
+          <div class="alert alert-danger phone-alert">phone should be valid mob. number</div>
+
+      </div>
+      <div class="form-group">
+          <label>Empolyee Title:</label>
+          <textarea id="title" class="form-control"></textarea>
+      </div>
+     
+      <button  id="addBtn" class="btn btn-info float-right">add Empolyee</button>
+
+      <div class="clearfix"></div>
+         
+    </div>
+
+    <div class="btnContainer my-3">
+      <button class="button list active" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+      <button class="button grid" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+    </div>
+    <input onkeyup="search(this.value)" placeholder="search" class="form-control" />
+
+
+    <table class="table my-3 list-table">
+       <thead>
+         <th>Empolyee Name</th>
+         <th>Empolyee Age</th>
+         <th>Empolyee Phone</th>
+         <th>Empolyee Title</th>
+         <th></th>
+
+       </thead>
+       <tbody id="tableBody">
+
+       </tbody>
+    </table>
+    <div id="dataRow" class="row my-3 grid-row">
+      
+    </div>
+  </div> 
+
+
+
+  
+  
+
+
+  
+
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/index.js"></script>
+    
+
+</body>
+</html>
